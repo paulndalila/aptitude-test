@@ -1,0 +1,225 @@
+{
+    "DHCP": [
+     {
+       "question": "What is the primary function of DHCP in a network?",
+       "choices": [
+         "Dynamically assign IP addresses to network devices",
+         "Manage network security and access control",
+         "Route data packets between different networks",
+         "Provide name resolution for devices on the network"
+       ],
+       "answer": "Dynamically assign IP addresses to network devices"
+     },
+     {
+       "question": "What is the typical process involved in a DHCP client obtaining an IP address?",
+       "choices": [
+         "1. Client broadcasts a DHCPDISCOVER message. 2. DHCP server offers an IP address. 3. Client sends DHCPREQUEST to confirm. 4. Server acknowledges and sends lease time.",
+         "Client directly requests an IP address from a specific DHCP server.",
+         "A network administrator manually assigns an IP address to each device.",
+         "The device inherits the IP address from the router it connects to."
+       ],
+       "answer": "1. Client broadcasts a DHCPDISCOVER message. 2. DHCP server offers an IP address. 3. Client sends DHCPREQUEST to confirm. 4. Server acknowledges and sends lease time."
+     },
+     {
+       "question": "What information does a DHCP server typically provide to a client along with the IP address?",
+       "choices": [
+         "Subnet mask, Default Gateway, DNS server address",
+         "Username and password for network access",
+         "MAC address of the DHCP server",
+         "Operating system version of the client device"
+       ],
+       "answer": "Subnet mask, Default Gateway, DNS server address"
+     },
+     {
+       "question": "What is the purpose of a lease time in DHCP?",
+       "answer": "A lease time defines the duration for which a client can hold the assigned IP address. After the lease expires, the client must renew it from the DHCP server or risk losing connectivity."
+     },
+     {
+       "question": "What are some benefits of using DHCP compared to static IP assignment?",
+       "choices": [
+         "Reduced administrative overhead for managing IP addresses",
+         "Automatic configuration for new devices joining the network",
+         "Improved scalability for dynamic network environments",
+         "All of the above"
+       ],
+       "answer": "All of the above"
+     },
+     {
+       "question": "How can a network administrator prevent unauthorized devices from obtaining an IP address through DHCP?",
+       "choices": [
+         "DHCP does not offer built-in access control. Additional security measures are needed.",
+         "Enable MAC filtering on the DHCP server to allow only authorized devices.",
+         "Disable DHCP and manually assign static IP addresses to all devices.",
+         "Increase the lease time for assigned IP addresses."
+       ],
+       "answer": "Enable MAC filtering on the DHCP server to allow only authorized devices."
+     },
+     {
+       "question": "What are some common troubleshooting steps when encountering DHCP related issues?",
+       "choices": [
+         "Verify the DHCP service is running on the DHCP server.",
+         "Ensure the client device is configured to obtain an IP address automatically (DHCP).",
+         "Check network connectivity between the client and the DHCP server.",
+         "All of the above"
+       ],
+       "answer": "All of the above"
+     },
+      {
+        "question": "What is the difference between DHCP reservation and DHCP reservation with static mapping?",
+        "choices": [
+          "Reservation assigns an IP address, static mapping defines additional configuration (e.g., hostname).",
+          "Reservation is temporary, static mapping is permanent.",
+          "There is no difference, they achieve the same outcome.",
+          "Reservation requires a specific DHCP server version, static mapping works on all versions."
+        ],
+        "answer": "a) Reservation assigns an IP address, static mapping defines additional configuration (e.g., hostname)."
+      },
+      {
+        "question": "What is the role of a DHCP relay agent in a network?",
+        "answer": "A DHCP relay agent forwards DHCP messages between different network segments. This allows clients on a subnet without a DHCP server to obtain an IP address from a server on another subnet."
+      },
+      {
+        "question": "What are some security considerations when using DHCP?",
+        "choices": [
+          "Use strong passwords for DHCP server access.",
+          "Implement MAC filtering to control authorized devices.",
+          "Regularly update the DHCP server software with security patches.",
+          "All of the above."
+        ],
+        "answer": "d) All of the above."
+      },
+      {
+        "question": "What are some limitations of DHCP?",
+        "choices": [
+          "DHCP may not be suitable for real-time applications requiring very predictable IP addresses.",
+          "Reliant on a functioning DHCP server for clients to obtain IP addresses.",
+          "Increased network traffic due to DHCP message exchange.",
+          "All of the above."
+        ],
+        "answer": "d) All of the above."
+      },
+      {
+        "question": "How can you identify the DHCP server leasing IP addresses on your network?",
+        "choices": [
+          "Check the network router configuration for DHCP server details.",
+          "Use network diagnostic tools to identify devices responding to DHCP requests.",
+          "Look for a process named dhcpd running on a network device.",
+          "Both a and b."
+        ],
+        "answer": "d) Both a and b."
+      }
+    ],
+    "FTP" : [
+      {
+        "question": "What is the default port number for FTP connections?",
+        "choices": [
+          "21",
+          "22",
+          "80",
+          "443"
+        ],
+        "answer": "21"
+      },
+      {
+        "question": "FTP stands for...",
+        "choices": [
+          "File Transfer Protocol",
+          "Fast Transfer Protocol",
+          "File Transport Protocol",
+          "Folder Transfer Protocol"
+        ],
+        "answer": "File Transfer Protocol"
+      },
+      {
+        "question": "There are two main modes of operation in FTP. Which of these allows you to see the contents of a directory on the server without transferring any files?",
+        "choices": [
+          "Active Mode",
+          "Passive Mode",
+          "Binary Mode",
+          "ASCII Mode"
+        ],
+        "answer": "Active Mode"
+      },
+      {
+        "question": "What is the purpose of the username and password in FTP?",
+        "choices": [
+          "To encrypt the transferred data",
+          "To authenticate the user and grant access to specific directories",
+          "To specify the source and destination of the file transfer",
+          "To control the speed of the file transfer"
+        ],
+        "answer": "To authenticate the user and grant access to specific directories"
+      },
+      {
+        "question": "Which of the following is a secure version of FTP that encrypts data transfer?",
+        "choices": [
+          "SFTP",
+          "FTPS",
+          "HTTPS",
+          "SSH"
+        ],
+        "answer": "SFTP (SSH File Transfer Protocol) or FTPS (FTP Secure)"
+    },
+    {
+      "question": "What are some limitations of using FTP?",
+      "choices": [
+        "Limited functionality for advanced file operations (e.g., renaming)",
+        "Unencrypted data transfer (security risk)",
+        "Both A and B",
+        "None of the above"
+      ],
+      "answer": "Both A and B"
+    },
+    {
+      "question": "What is the difference between ASCII and Binary transfer modes in FTP?",
+      "choices": [
+        "ASCII mode is for text files, Binary mode is for all other file types",
+        "ASCII mode compresses files for faster transfer, Binary mode does not",
+        "There is no difference, they are the same",
+        "None of the above"
+      ],
+      "answer": "ASCII mode is for text files, Binary mode is for all other file types"
+    },
+    {
+      "question": "What are some common FTP commands used for navigation and file transfer?",
+      "choices": [
+        "LIST - Lists directory contents, GET - Downloads file, PUT - Uploads file, CD - Change directory",
+        "These commands vary depending on the FTP client",
+        "There are no standard commands in FTP",
+        "None of the above"
+      ],
+      "answer": "LIST - Lists directory contents, GET - Downloads file, PUT - Uploads file, CD - Change directory"
+    },
+    {
+      "question": "You are unable to connect to an FTP server. What could be some potential reasons?",
+      "choices": [
+        "Incorrect server address or port number",
+        "Invalid username or password",
+        "Firewall blocking FTP connections",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "How can you verify if an FTP server is running and accessible?",
+      "choices": [
+        "Use a port scanner to check port 21",
+        "Try connecting with an FTP client software",
+        "Both A and B",
+        "There is no way to verify remotely"
+      ],
+      "answer": "Both A and B"
+    },
+    {
+      "question": "Why is using SFTP or FTPS recommended over standard FTP?",
+      "choices": [
+        "They offer faster transfer speeds",
+        "They encrypt data transfer for improved security",
+        "They allow access to additional features not available in FTP",
+        "None of the above"
+      ],
+      "answer": "They encrypt data transfer for improved security"
+    }
+    ]
+  }
+  
